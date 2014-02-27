@@ -8,7 +8,5 @@ $(document).ready(function(){
 	    pagination: '.pagination',
 	  });
 	})
-	$(".swiper-container").height(
-		$(".swiper-slide").height()
-	);
+	$(".swiper-container").height($(".swiper-slide").height());
 });
