@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>剑桥公社微信平台</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-mobile/1.4.1/jquery.mobile.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="http://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/jquery-mobile/1.4.1/jquery.mobile.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/lib.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="index">
+	<div class="swiper-container">
+  		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="http://camb-image.stor.sinaapp.com/slider/slider1.jpg"/></div>
+			<div class="swiper-slide"><img src="http://camb-image.stor.sinaapp.com/slider/slider2.jpg"/></div>
+			<div class="swiper-slide"><img src="http://camb-image.stor.sinaapp.com/slider/slider3.jpg"/></div>
+			<div class="swiper-slide"><img src="http://camb-image.stor.sinaapp.com/slider/slider4.jpg"/></div>
+		</div>
+  		<div class="pagination"></div>
+	</div>
+	<div class="ui-grid-a ui-responsive index">
+		<div class="ui-block-a">
+			<div class="arc ui-shadow ui-corner-all" onclick="loadList(1)">
+				<div>
+					<img src="http://camb-image.stor.sinaapp.com/grid/pop.jpg"/>
+				</div>
+				<p>热门场景</p>
+			</div>
+		</div>
+		<div class="ui-block-b">
+			<div class="arc ui-shadow ui-corner-all" onclick="loadList(1)">
+				<div>
+					<img src="http://camb-image.stor.sinaapp.com/grid/contract.jpg"/>
+				</div>
+				<p>联系方式</p>
+			</div>
+		</div>
+		<div class="ui-block-a">
+			<div class="arc ui-shadow ui-corner-all" onclick="loadList(1)">
+				<div>
+					<img src="http://camb-image.stor.sinaapp.com/grid/group.jpg"/>
+				</div>
+				<p>团购套餐</p>
+			</div>
+		</div>
+		<div class="ui-block-b">
+			<div class="arc ui-shadow ui-corner-all" onclick="loadList(4)">
+				<div>
+					<img src="http://camb-image.stor.sinaapp.com/grid/customer.jpg"/>
+				</div>
+				<p>客照分享</p>
+			</div>
+		</div>
+		<div class="ui-block-a">
+			<div class="arc ui-shadow ui-corner-all" onclick="loadList(1)">
+				<div>
+					<img src="http://camb-image.stor.sinaapp.com/grid/about.jpg"/>
+				</div>
+				<p>了解艺匠</p>
+			</div>
+		</div>
+		<div class="ui-block-b">
+			<div class="arc ui-shadow ui-corner-all" onclick="loadList(1)">
+				<div>
+					<img src="http://camb-image.stor.sinaapp.com/grid/credit.jpg"/>
+				</div>
+				<p>积分商城</p>
+			</div>
+		</div>
+		<div class="ui-block-a">
+			<div class="arc ui-shadow ui-corner-all" onclick="loadList(1)">
+				<div>
+					<img src="http://camb-image.stor.sinaapp.com/grid/reserve.jpg"/>
+				</div>
+				<p>在线预约</p>
+			</div>
+		</div>
+		<div class="ui-block-b">
+			<div class="arc ui-shadow ui-corner-all" onclick="loadList(8)">
+				<div>
+					<img src="http://camb-image.stor.sinaapp.com/grid/show.jpg"/>
+				</div>
+				<p>婚纱礼服展示</p>
+			</div>
+		</div>
+		<div class="ui-block-a">
+			<div class="arc ui-shadow ui-corner-all" onclick="loadList(1)">
+				<div>
+					<img src="http://camb-image.stor.sinaapp.com/grid/star.jpg"/>
+				</div>
+				<p>STAR MOVIE</p>
+			</div>
+		</div>
+		<div class="ui-block-b">
+			<div class="arc ui-shadow ui-corner-all" onclick="loadList(1)">
+				<div>
+					<img src="http://camb-image.stor.sinaapp.com/grid/consult.jpg"/>
+				</div>
+				<p>免费咨询</p>
+			</div>
+		</div>
+		<div class="ui-block-a">
+			<div class="arc  ui-shadow ui-corner-all" onclick="loadList(1)">
+				<div>
+					<img src="http://camb-image.stor.sinaapp.com/grid/pop.jpg"/>
+				</div>
+				<p>留言板</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+</div>
+<div data-role="page" id="list">
+</div>
+</body>
+</html>

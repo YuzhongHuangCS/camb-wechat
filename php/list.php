@@ -6,7 +6,7 @@ if (!$con){
 }
 mysql_query("set character set 'utf8'");
 mysql_select_db("camb", $con);
-$sql = "SELECT * FROM `list` WHERE parentID = " . $listID;
+$sql = "SELECT * FROM `list` WHERE parentID = " . $listID . " ORDER BY `list`.`rank`";
 $result = mysql_query($sql, $con);
 $row = array();
 while($r = mysql_fetch_assoc($result)){
