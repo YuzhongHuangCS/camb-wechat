@@ -16,12 +16,12 @@
 	<div class="swiper-container">
   		<div class="swiper-wrapper">
   			<?php
-  			$con = mysql_connect("localhost","www-data");
+  			$con = mysql_connect(SAE_MYSQL_HOST_M.":".SAE_MYSQL_PORT,SAE_MYSQL_USER,SAE_MYSQL_PASS);
   			if (!$con){
 				die(mysql_error());
 			}
 			mysql_query("set character set 'utf8'");
-			mysql_select_db("camb", $con);
+			mysql_select_db(SAE_MYSQL_DB, $con);
 			$sql = "SELECT * FROM `slider` ORDER BY `slider`.`rank`";
 			$result = mysql_query($sql, $con);
 			$slider = array();
@@ -46,9 +46,9 @@
 		} else{
 			echo "<div class='ui-block-a'>";
 		}
-		echo "<div class='arc ui-shadow ui-corner-all' onclick='loadList(";
-		echo (1 + $i);
-		echo "')><div><img src='";
+		echo "<div class='arc ui-shadow ui-corner-all' onclick='";
+		echo ($grid[$i]['action']);
+		echo "'><div><img src='";
 		echo ($grid[$i]['img']);
 		echo "'/></div><p>";
 		echo ($grid[$i]['text']);
