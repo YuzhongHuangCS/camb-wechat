@@ -7,8 +7,15 @@ $(document).ready(function(){
 	    autoplay: 5000,
 	    pagination: '.pagination',
 	  });
-	})
-	$(".swiper-container").height($(".swiper-slide").height());
+	});
+	imgReady('http://camb-image.stor.sinaapp.com/slider/slider1.jpg', function(){
+		$(".swiper-container").height(window.innerWidth * this.height / this.width);
+	});
+	$(window).resize(function() {
+		imgReady('http://camb-image.stor.sinaapp.com/slider/slider1.jpg', function(){
+			$(".swiper-container").height(window.innerWidth * this.height / this.width);
+		});
+	});
 });
 function loadList(id){
 	location.href='#list'
