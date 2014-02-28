@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<script src="http://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
 	<script src="http://cdn.bootcss.com/jquery-mobile/1.4.1/jquery.mobile.min.js"></script>
-	<script src="js/lib.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/lib.min.js"></script>
 </head>
 <body>
 <div data-role="page" id="index">
@@ -24,87 +24,87 @@
 	</div>
 	<div class="ui-grid-a ui-responsive index">
 		<div class="ui-block-a">
-			<a href="#pop" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all" onclick="location='#pop'">
 				<div>
 					<img src="http://camb-image.stor.sinaapp.com/grid/pop.jpg"/>
 				</div>
 				<p>热门场景</p>
-			</div></a>
+			</div>
 		</div>
 		<div class="ui-block-b">
-			<a href="#contract" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all" onclick="loadList(1)">
 				<div>
 					<img src="http://camb-image.stor.sinaapp.com/grid/contract.jpg"/>
 				</div>
 				<p>联系方式</p>
-			</div></a>
+			</div>
 		</div>
 		<div class="ui-block-a">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all" onclick="location='#group'">
 				<div>
 					<img src="http://camb-image.stor.sinaapp.com/grid/group.jpg"/>
 				</div>
 				<p>团购套餐</p>
-			</div></a>
+			</div>
 		</div>
 		<div class="ui-block-b">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all" onclick="location='#customer'">
 				<div>
 					<img src="http://camb-image.stor.sinaapp.com/grid/customer.jpg"/>
 				</div>
 				<p>客照分享</p>
-			</div></a>
+			</div>
 		</div>
 		<div class="ui-block-a">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all" onclick="location='#about'">
 				<div>
 					<img src="http://camb-image.stor.sinaapp.com/grid/about.jpg"/>
 				</div>
 				<p>了解艺匠</p>
-			</div></a>
+			</div>
 		</div>
 		<div class="ui-block-b">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all" onclick="location='#credit'">
 				<div>
 					<img src="http://camb-image.stor.sinaapp.com/grid/credit.jpg"/>
 				</div>
 				<p>积分商城</p>
-			</div></a>
+			</div>
 		</div>
 		<div class="ui-block-a">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all" onclick="location='#reserve'">
 				<div>
 					<img src="http://camb-image.stor.sinaapp.com/grid/reserve.jpg"/>
 				</div>
 				<p>在线预约</p>
-			</div></a>
+			</div>
 		</div>
 		<div class="ui-block-b">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all" onclick="location='#show'">
 				<div>
 					<img src="http://camb-image.stor.sinaapp.com/grid/show.jpg"/>
 				</div>
 				<p>婚纱礼服展示</p>
-			</div></a>
+			</div>
 		</div>
 		<div class="ui-block-a">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all" onclick="location='#star'">
 				<div>
 					<img src="http://camb-image.stor.sinaapp.com/grid/star.jpg"/>
 				</div>
 				<p>STAR MOVIE</p>
-			</div></a>
+			</div>
 		</div>
 		<div class="ui-block-b">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all" onclick="location='#consult'">
 				<div>
 					<img src="http://camb-image.stor.sinaapp.com/grid/consult.jpg"/>
 				</div>
 				<p>免费咨询</p>
-			</div></a>
+			</div>
 		</div>
 		<div class="ui-block-a">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-btn ui-shadow ui-corner-all">
+			<div class="arc ui-btn ui-shadow ui-corner-all" onclick="location='#pop'">
 				<div>
 					<img src="http://camb-image.stor.sinaapp.com/grid/pop.jpg"/>
 				</div>
@@ -114,10 +114,10 @@
 	</div>
 	<div class="footer"></div>
 </div>
-<div data-role="page" id="pop">
-	<div class="ui-grid-a ui-responsive list">
+<div data-role='page' id='pop'>
+	<div class='ui-grid-a ui-responsive list'>
 		<div class="ui-block-a">
-			<a href="#pop" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all">
 				<p class="title">童话系列</p>
 				<div class="box">
 					<img src="http://camb-image.stor.sinaapp.com/content/pop/fairy.jpg"/>
@@ -125,64 +125,63 @@
 				<p class="more">巨资打造全新梦幻《童话》系列---我们美丽公主，住在华丽的城堡，等待着白马王子，您的童话梦想实现了吗？选择韩国艺匠将您变成美丽的公主！</p>
 			</div></a>
 		</div>
-		<div class="ui-block-b">
-			<a href="#contract" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+		<div class="ui-block-a">
+			<div class="arc ui-shadow ui-corner-all">
 				<p class="title">釜山之旅</p>
 				<div class="box">
 					<img src="http://camb-image.stor.sinaapp.com/content/pop/busan.jpg"/>
 				</div>
 				<p class="more">釜山豪华自由行!韩国团队1对1全程贴心服务,尽在韩国艺匠Artiz婚纱摄影!</p>
-			</div></a>
+			</div>
 		</div>
 		<div class="ui-block-a">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all">
 				<p class="title">王妃</p>
 				<div class="box">
 					<img src="http://camb-image.stor.sinaapp.com/content/pop/princess.jpg"/>
 				</div>
 				<p class="more">随着英国女王凯利大婚，韩国迅速兴起一股王妃奢华风，在韩式婚纱活泼自然的基础上加上了奢华贵族气息，是韩国最风靡也是最昂贵的系列。</p>
-			</div></a>
+			</div>
 		</div>
-		<div class="ui-block-b">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+		<div class="ui-block-a">
+			<div class="arc ui-shadow ui-corner-all">
 				<p class="title">Lace</p>
 				<div class="box">
 					<img src="http://camb-image.stor.sinaapp.com/content/pop/lace.jpg"/>
 				</div>
 				<p class="more">2012年韩国新人最热捧的婚照的梦幻系列 DREAM WEDDING系列是韩国ARTIZ一款面向高端客户指定的梦幻系列，2011年12月首次在中国发行，在此之前DREAM WED</p>
-			</div></a>
+			</div>
 		</div>
 		<div class="ui-block-a">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all">
 				<p class="title">梦中的婚纱</p>
 				<div class="box">
 					<img src="http://camb-image.stor.sinaapp.com/content/pop/dream.jpg"/>
 				</div>
 				<p class="more">2012年韩国新人最热捧的婚照的梦幻系列 DREAM WEDDING系列是韩国ARTIZ一款面向高端客户指定的梦幻系列，2011年12月首次在中国发行，在此之前DREAM WED</p>
-			</div></a>
+			</div>
 		</div>
-		<div class="ui-block-b">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+		<div class="ui-block-a">
+			<div class="arc ui-shadow ui-corner-all">
 				<p class="title">丽姿</p>
 				<div class="box">
 					<img src="http://camb-image.stor.sinaapp.com/content/pop/korea.jpg"/>
 				</div>
 				<p class="more">《丽姿》"RICCI"2012年2月推出，主张精致完美的ARTIZ最高级别的系类。</p>
-			</div></a>
+			</div>
 		</div>
 		<div class="ui-block-a">
-			<a href="#group" data-transition="pop" id="mono"><div class="arc ui-shadow ui-corner-all">
+			<div class="arc ui-shadow ui-corner-all">
 				<p class="title">星空系列</p>
 				<div class="box">
 					<img src="http://camb-image.stor.sinaapp.com/content/pop/sky.jpg"/>
 				</div>
 				<p class="more">2012年最IN系列之一 ARTIZ顾客人气指数100% 所有新人都被这独一无二的场景吸引美国华人飞行12小时赶拍场景热卖指数非同一般</p>
-			</div></a>
+			</div>
 		</div> 	
 	</div>
 </div>
-<div data-role="page" id="contract">
-		This is page pop
+<div data-role="page" id="list">
 </div>
 </body>
 </html>
