@@ -5,11 +5,12 @@ body{background-color:#ebebeb}
 .index .arc p{margin:0;height:2rem;line-height:2rem;font-size:1rem;font-weight:700;text-align:center;vertical-align:middle;text-shadow:0 1px 0 #f3f3f3}
 .index .arc div:first-child{height:8rem;overflow:hidden;margin:0}
 .index .footer{margin-bottom:5%}
+.navbar{position:fixed;width:100%;z-index:10}
+.list #listContent{margin-top:3rem}
 .list .arc{height:20rem;overflow:hidden;margin:1rem .8rem;padding:0 .8rem;cursor:pointer}.list .arc .title{font-size:1.2rem;margin:1rem 0 .5rem}
 .list .arc .more{font-weight:100;line-height:1.5rem;color:#444;margin:.5rem 0}
 .list .arc img{width:100%}
 .list .arc .box{height:12rem;overflow:hidden}
-.post .navbar{position:fixed;width:100%;z-index:10}
 .post .content{margin-top:2rem}.post .content img{width:100%}
 .post .footer{margin:0 0 10%;text-align:center}.post .footer button{width:45%}
 .post .footer .ui-icon-myicon:after{background-image:url("../img/icon_timeline.png");background-size:32px 32px}

@@ -35,37 +35,63 @@ while($r = mysql_fetch_assoc($result)){
 };
 mysql_close($con);
 //start layout
-echo'<div data-role="page" id="index" class="index">';
-echo	'<div class="swiper-container">';
-echo		'<div class="swiper-wrapper">';
+$content = '<div data-role="page" id="index" class="index">' .
+				'<div class="swiper-container">' .
+					'<div class="swiper-wrapper">';
 for($i = 0; $i < count($slider); $i++){
-echo			'<div class="swiper-slide">';
-echo				'<img src="'; echo ($slider[$i]['img']); echo '"/>';
-echo			'</div>';
+$content .=				'<div class="swiper-slide">' .
+							'<img src="' . ($slider[$i]['img']) . '"/>' .
+						'</div>';
 }
-echo		'</div>';
-echo		'<div class="pagination"></div>';
-echo	'</div>';
+$content .=			'</div>' .
+					'<div class="pagination"></div>' .
+				'</div>';
 //slider end, grid start
-echo	'<div class="ui-grid-a ui-responsive">';
+$content .=		'<div class="ui-grid-a ui-responsive">';
 for($i = 0; $i < count($grid); $i++){
 	if($i % 2){
-echo		'<div class="ui-block-b">';
+$content .=			'<div class="ui-block-b">';
 	} else{
-echo		'<div class="ui-block-a">';
-	}
-echo			'<div class="arc ui-shadow ui-corner-all" onclick='; echo ($grid[$i]['action']); echo '>';
-echo				'<div><img src="'; echo ($grid[$i]['img']); echo '"/></div>';
-echo				'<p>'; echo ($grid[$i]['text']); echo '</p>';
-echo			'</div>';
-echo		'</div>';
+$content .=			'<div class="ui-block-a">';
 }
-echo	'</div>';
-echo	'<div class="footer"></div>';
-echo'</div>';
+$content .=				'<div class="arc ui-shadow ui-corner-all" onclick=' . ($grid[$i]['action']) . '>' .
+							'<div><img src="' . ($grid[$i]['img']) . '"/></div>' .
+							'<p>' . ($grid[$i]['text']) . '</p>' .
+						'</div>' .
+					'</div>';
+}
+$content .=		'</div>';
+$content .=		'<div class="footer"></div>';
+$content .=	'</div>';
+echo($content);
 //index page end
 ?>
-<div data-role="page" id="list" class="list"></div>
-<div data-role="page" id="post" class="post"></div>
+<div data-role="page" id="list" class="list">
+	<div data-role="navbar" data-grid="c" class="ui-body-b navbar">
+    	<ul>
+    	   	<li><a class="ui-btn-active ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l" onclick="history.back()">返回</a></li>
+    	   	<li><a href="/" class="ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">首页</a></li>
+    	   	<li><a href="#" class="ui-shadow ui-corner-all ui-btn-icon-left ui-icon-phone">热线</a></li>
+    	  	<li><a href="#" class="ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">导航</a></li>
+		</ul>
+	</div>
+	<div class="ui-grid-a ui-responsive" id="listContent"></div>
+</div>
+<div data-role="page" id="post" class="post">
+	<div data-role="navbar" data-grid="c" class="ui-body-b navbar">
+    	<ul>
+    	   	<li><a class="ui-btn-active ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l" onclick="history.back()">返回</a></li>
+    	   	<li><a href="/" class="ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">首页</a></li>
+    	   	<li><a href="#" class="ui-shadow ui-corner-all ui-btn-icon-left ui-icon-phone">热线</a></li>
+    	  	<li><a href="#" class="ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">导航</a></li>
+		</ul>
+	</div>
+	<div class="ui-body ui-corner-all content" id="postContent"></div>
+	<div class="ui-bar ui-corner-all footer">
+		<button class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-icon-left ui-icon-action">发送给朋友</button>
+		<button class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-btn-icon-left ui-icon-myicon ui-nodisc-icon">分享到朋友圈</button>
+		<button class="ui-btn ui-btn-b ui-corner-all ui-shadow" style="width:100% " onclick="$('html,body').animate({scrollTop: 0})">返回顶部</button>
+	</div>
+</div>
 </body>
 </html>
