@@ -18,11 +18,11 @@ $(document).ready(function(){
 	});
 });
 function loadList(id){
-	location.href='#list'
+	location.href='#list';
 	var query = "php/list.php?listID=" + id;
 	$.getJSON(query,function(result){
 		var content,i;
-		content = "<div class='ui-grid-a ui-responsive list'>";
+		content = "<div class='ui-grid-a ui-responsive'>";
 		for (i=0; i<result.length; i++) {
 			if (i % 2) {
 				content += "<div class='ui-block-b'>";
