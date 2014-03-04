@@ -27,3 +27,4 @@ body{background-color:#ebebeb}
 .swiper-pagination-switch{display:inline-block;width:.6rem;height:.6rem;border-radius:.6rem;background:none repeat scroll 0 0 #999;box-shadow:0 2px 3px #555 inset;margin:0 .3rem;vertical-align:middle;cursor:pointer}
 .swiper-active-switch{background:none repeat scroll 0 0 #fff}
 .swiper-visible-switch{}
+#uyan_frame{margin-top:4rem}
