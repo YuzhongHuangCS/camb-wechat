@@ -60,23 +60,23 @@ echo($content);
 //index page end
 ?>
 <div data-role="page" id="list" class="list">
-	<div data-role="navbar" data-grid="c" class="ui-body-b navbar">
+	<div data-role="navbar" data-grid="c" class="ui-body-b ui-shadow navbar">
     	<ul>
-    	   	<li><a class="ui-btn-active ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l" onclick="history.back()">返回</a></li>
-    	   	<li><a href="/" class="ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">首页</a></li>
-    	   	<li><a href="#" class="ui-shadow ui-corner-all ui-btn-icon-left ui-icon-phone">热线</a></li>
-    	  	<li><a href="#" class="ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">导航</a></li>
+    	   	<li><a class="ui-btn ui-btn-icon-left ui-icon-carat-l" onclick="history.back()">返回</a></li>
+    	   	<li><a href="/" class="ui-btn ui-btn-icon-left ui-icon-home">首页</a></li>
+    	   	<li><a href="#" class="ui-btn ui-btn-icon-left ui-icon-phone">热线</a></li>
+    	  	<li><a href="#" class="ui-btn ui-btn-icon-left ui-icon-bullets">导航</a></li>
 		</ul>
 	</div>
 	<div class="ui-grid-a ui-responsive" id="listContent"></div>
 </div>
 <div data-role="page" id="post" class="post">
-	<div data-role="navbar" data-grid="c" class="ui-body-b navbar">
+	<div data-role="navbar" data-grid="c" class="ui-body-b ui-shadow navbar">
     	<ul>
-    	   	<li><a class="ui-btn-active ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l" onclick="history.back()">返回</a></li>
-    	   	<li><a href="/" class="ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">首页</a></li>
-    	   	<li><a href="#" class="ui-shadow ui-corner-all ui-btn-icon-left ui-icon-phone">热线</a></li>
-    	  	<li><a href="#" class="ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets">导航</a></li>
+    	   	<li><a class="ui-btn ui-btn-icon-left ui-icon-carat-l" onclick="history.back()">返回</a></li>
+    	   	<li><a href="/" class="ui-btn ui-btn-icon-left ui-icon-home">首页</a></li>
+    	   	<li><a href="#" class="ui-btn ui-btn-icon-left ui-icon-phone">热线</a></li>
+    	  	<li><a href="#" class="ui-btn ui-btn-icon-left ui-icon-bullets">导航</a></li>
 		</ul>
 	</div>
 	<div class="ui-body ui-corner-all content" id="postContent"></div>
